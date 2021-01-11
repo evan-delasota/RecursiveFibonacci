@@ -1,6 +1,10 @@
 class Main {
   public static void main(String[] args) {
-    System.out.println(recursiveFib(9));
+    final long startTime = System.currentTimeMillis();
+    System.out.println(recursiveFib(25));
+    final long endTime = System.currentTimeMillis();
+    
+    System.out.println("Total execution time: " + (endTime - startTime));
     
   }
 
